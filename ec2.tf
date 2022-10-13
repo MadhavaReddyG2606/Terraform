@@ -1,4 +1,5 @@
 #https://cloudinfrastructureservices.co.uk/how-to-create-linux-aws-ec2-instance-using-terraform/
+#ssh -i ~/.ssh/aws ec2-user@38.200.209.127
 resource "aws_key_pair" "key" {
   key_name   = "login_key"
   public_key = file("~/.ssh/aws.pub")
